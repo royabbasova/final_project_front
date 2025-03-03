@@ -1,0 +1,261 @@
+* {
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    height: 100%;
+}
+
+/*LOGIN*/
+
+#login_container {
+    padding: 24px 60px;
+
+    width: 50%;
+
+    @media only screen and (max-width: 744px) {
+        width: 100%;
+
+        padding: 27px 41px;
+    }
+}
+
+#logo_img {
+    @media only screen and (max-width: 744px) {
+        width: 62px;
+        height: 80px;
+    } 
+}
+
+#login_container h3 {
+    margin: 0 0 24px 0;
+
+    font-size: 40px;
+    font-weight: bold;
+    color: #04404b;
+    text-align: center;
+
+    @media only screen and (max-width: 744px) {
+        margin: 266px 0 0;
+
+        font-size: 28px;
+    } 
+}
+
+.description {
+    display: none;
+
+    @media only screen and (max-width: 744px) {
+        display: block;
+
+        margin: 10px 0 24px;
+        text-align: center;
+
+        font-size: 22px;
+        color: #04404b;
+        font-weight: 500;
+    } 
+}
+
+.form_group,
+select {
+    margin-bottom: 12px;
+}
+
+.form_group input,
+select{
+    padding: 16px 24px;
+
+    width: 100%;
+
+    border-radius: 12px;
+    border: 1px solid #e8e8e8;
+    outline: none;
+
+    font-size: 20px;
+}
+
+select {
+    color: #606060;
+    font-size: 20px;
+
+    width: 100%;
+
+    appearance: none;
+}
+
+.select_role {
+    display: flex;
+}
+
+.select_role img {
+    position: absolute;
+    left: 650px;
+    top: 468px;
+
+    pointer-events: none;
+
+    @media only screen and (max-width: 744px) {
+        top: 627px;
+        left: 653px;
+    }
+}
+
+.password_container {
+    display: flex;
+    overflow: hidden;
+
+    border-radius: 12px;
+    border: 1px solid #e8e8e8;
+}
+
+.password_container input {
+    border: none;
+    outline: none;
+}
+
+.password_container img {
+    margin: 16px 25px 0 0;
+
+    width: 24px;
+    height: 24px;
+}
+
+.btn_group {
+    text-align: end;
+    margin-bottom: 7px;
+}
+
+.btn_login {
+    padding: 13.5px 24px;
+
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #076c7d;
+    font-size: 24px;
+    font-weight: 600;
+
+    border: 1px solid #076c7d;
+    border-radius: 12px;
+
+    transition: all 0.5s ease;
+
+    @media only screen and (max-width: 744px) {
+        font-size: 20px;
+    }
+}
+
+.btn_login:hover {
+    background-color: #04404b;
+}
+
+.reset_pswd {
+    color: #777777;
+    font-size: 17px;
+
+    @media only screen and (max-width: 744px) {
+        font-size: 16px;
+    }
+}
+
+.reset {
+    margin: 36px 0 60px;
+
+    text-align: end;
+
+    @media only screen and (max-width: 744px) {
+        margin: 32px 0 53px;
+    }
+}
+
+form {
+    margin-top: 80px;
+    
+    @media only screen and (max-width: 744px) {
+        margin-top: 0;
+    }
+}
+
+.foot_login {
+    display: none;
+    
+    @media only screen and (max-width: 744px) {
+        display: block;
+
+        margin: 114px 0 80px;
+
+        text-align: center;
+
+        font-size: 16px;
+    }
+}
+
+.foot_login a {
+    @media only screen and (max-width: 744px) {
+        color: #d00416;
+        font-weight: 600;
+        text-decoration: none;
+    }
+}
+
+
+/*GREEN*/
+
+#green_zone {
+    padding: 36px 67px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #04404b;
+    width: 50%;
+}
+
+.text {
+    text-align: center;
+    color: #ffffff;
+}
+
+.text h4 {
+    margin: 0;
+
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.text p {
+    margin: 30px 0 60px;
+
+    font-size: 28px;
+    font-weight: 300;
+}
+
+#signup_btn {
+    padding: 13.5px 24px;
+
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+
+    transition: all 0.5s ease;
+}
+
+#signup_btn:hover {
+    background-color: #C0F6FF;
+    color: #04404b;
+}
+
+@media only screen and (max-width: 744px) {
+    #green_zone {
+        display: none;
+    }
+}

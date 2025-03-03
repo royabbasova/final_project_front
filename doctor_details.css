@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.doctors_list {
+    padding: 0;
+    margin: 50px auto;
+
+    list-style-type: none;
+}
+
+.doctor {
+    padding: 44px 24px;
+    margin-bottom: 48px;
+
+    border: 1px solid #d2d2d2;
+    border-radius: 24px;
+
+    @media only screen and (max-width: 744px) {
+        padding: 24px 20px;
+    }
+}
+
+.doctor_card {
+    display: flex;
+}
+
+#doctor_img {
+    width: 253px;
+    height: 260px;
+
+    @media only screen and (max-width: 744px) {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.doctor_info {
+    padding: 60px 0;
+    margin-left: 36px;
+
+    list-style-type: none;
+
+    @media only screen and (max-width: 744px) {
+        padding: 16px 0;
+    }
+}
+
+#doctor_name a {
+    font-size: 36px;
+    font-weight: 500;
+    color: #000000;
+
+    @media only screen and (max-width: 744px) {
+        font-size: 28px;
+    }
+}
+
+#doctor_field {
+    margin: 10px 0 20px;
+
+    font-size: 28px;
+    color: #606060;
+
+    @media only screen and (max-width: 744px) {
+        font-size: 22px;
+
+        margin: 8px 0 24px;
+    }
+}
+
+#doctor_hospital {
+    font-size: 24px;
+    color: #333333;
+
+    @media only screen and (max-width: 744px) {
+        font-size: 22px;
+    }
+}
+
+#doctor_hospital img {
+    margin: 6px 15px 0 0;
+    width: 15px;
+    height: 18px;
+
+    @media only screen and (max-width: 744px) {
+        width: 13.75px;
+        height: 16.5px;
+    }
+}
+
+#cancel_btn {
+    width: 64px;
+    height: 64px;
+
+    position: absolute;
+    left: 1440px;
+
+    @media only screen and (max-width: 744px) {
+        left: 695px;
+
+        width: 36px;
+        height: 36px;
+    }
+}
+
+.doctor_details {
+    margin-top: 30px;
+
+    display: flex;
+}
+
+.doctor_details p {
+    margin: 0 0 16px;
+
+    color: #4a4a4a;
+    font-size: 28px;
+
+    @media only screen and (max-width: 744px) {
+        font-size: 18px;
+    }
+}
+
+.doctor_details span {
+    color: #000000;
+}
+
+.data2 {
+    margin-left: 83px;
+}

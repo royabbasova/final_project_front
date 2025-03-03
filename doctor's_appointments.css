@@ -1,0 +1,473 @@
+* {
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+
+body {
+    margin: 0;
+    padding-top: 150px;
+
+    @media only screen and (max-width: 744px) {
+        padding-top: 116px;
+    }
+}
+
+/*NAVBAR*/
+
+nav {
+    padding: 5px 80px;
+
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+
+    border-bottom: 1px solid #e8e8e8;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff;
+
+    @media only screen and (max-width: 744px) {
+        padding: 16px;
+
+        width: 744px;
+
+        font-size: 18px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo_img {
+    width: 96px;
+    height: 130px;
+
+    @media only screen and (max-width: 744px) {
+        width: 62px;
+        height: 80px;
+    }
+}
+
+.nav_pages {
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    align-items: center;
+
+    list-style-type: none;
+}
+
+.nav_pages a {
+    color: #000000;
+
+    transition: all 0.2s ease;
+}
+
+.nav_pages :last-child {
+    margin-right: 0;
+}
+
+.nav_pages a:hover {
+    color: #258d8a;
+}
+
+.nav_pages li {
+    margin-right: 46.3px;
+
+    @media only screen and (max-width: 744px) {
+        margin-right: 24px;
+    }
+}
+
+.nav_profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification {
+    margin-right: 16px;
+
+    width: 36px;
+    height: 36px;
+
+    cursor: pointer;
+
+    @media only screen and (max-width: 744px) {
+        width: 32px;
+        height: 32px;
+    }
+}
+
+.p_icon {
+    cursor: pointer;
+
+    @media only screen and (max-width: 744px) {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+
+/*MAIN*/
+
+main {
+    padding: 24px 80px;
+    margin-bottom: 200px;
+
+    @media only screen and (max-width: 744px) {
+        padding: 16px;
+    }
+}
+
+h3 {
+    margin-top: 0;
+
+    font-size: 48px;
+    font-weight: bold;
+
+    @media only screen and (max-width: 744px) {
+        font-size: 28px;
+
+        margin-bottom: 24px;
+    }
+}
+
+/*ADD*/
+
+.add {
+    margin: 40px 0 24px;
+
+    display: flex;
+    justify-content: flex-end;
+
+    @media only screen and (max-width: 744px) {
+        margin: 32px 0 16px;
+    }
+}
+
+#add_appointment {
+    padding: 16px 24px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #076c7d;
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+
+    transition: all 0.5s ease;
+
+    @media only screen and (max-width: 744px) {
+        font-size: 18px;
+    }
+}
+
+#add_appointment:hover {
+    background-color: #04404b;
+}
+
+#add_appointment img {
+    margin-right: 12px;
+
+    @media only screen and (max-width: 744px) {
+        width: 22px;
+        height: 22px;
+    }
+}
+
+/*PATIENTS*/
+
+ul {
+    list-style-type: none;
+}
+
+.patients_table {
+    padding: 0;
+}
+
+.thead {
+    padding: 8px 117px 8px 120px;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #d1f3f2;
+    border-radius: 8px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.table_head {
+    margin-bottom: 16px;
+}
+
+.table_body {
+    padding: 16px 24px;
+    margin-bottom: 12px;
+
+    border: 1px solid #d2d2d2;
+    border-radius: 12px;
+}
+
+.tbody {
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 22px;
+    font-weight: 400;
+    color: #4a4a4a;
+}
+
+
+.tbody img {
+    margin-right: 16px;
+}
+
+.fullname {
+    margin-right: 180px;   
+}
+
+.tbody li:nth-child(3) {
+    margin-right: 190px;
+}
+
+.tbody li:nth-child(4) {
+    margin-right: 165px;
+}
+
+.tbody li:nth-child(5) {
+    margin-right: 100px;
+
+    color: #d00416;
+}
+
+.tbody button {
+    padding: 16px 24px;
+
+    background-color: #ffffff;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#edit {
+    margin-right: 8px;
+
+    border: 1px solid #1fc16b;
+    color: #1fc16b;
+
+    transition: all 0.5s ease;
+}
+
+#edit:hover {
+    background-color: #DBFFEC;
+}
+
+#delete {
+    border: 1px solid #d00416;
+    color: #d00416;
+
+    transition: all 0.5s ease;
+}
+
+#delete:hover {
+    background-color: #FFD2D6;
+}
+
+/*FOOTER*/
+
+footer {
+    padding: 36px 80px;
+    background-color: #d1f3f2;
+
+    @media only screen and (max-width: 744px) {
+        padding: 24px 16px;
+    }
+}
+
+.foot_container {
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    list-style-type: none;
+}
+
+.contact_us {
+    display: flex;
+
+    @media only screen and (max-width: 744px) {
+        margin-top: 40px;
+    }
+}
+
+.contact_list {
+    margin-top: 10px;
+
+    list-style-type: none;
+
+    font-size: 20px;
+
+    @media only screen and (max-width: 744px) {
+        margin-top: 0;
+
+        font-size: 16px;
+    }
+}
+
+.contact_list img {
+    margin-right: 10px;
+}
+
+.contact_list li {
+    margin-bottom: 10px;
+
+    @media only screen and (max-width: 744px) {
+        margin-bottom: 14.5px;
+    }
+}
+
+.social {
+    position: relative;
+    top: 40px;
+    right: 135px;
+
+    @media only screen and (max-width: 744px) {
+        top: 10px;
+        right: 100px;
+    }
+}
+
+.social img {
+    width: 30px;
+    height: 30px;
+
+    @media only screen and (max-width: 744px) {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.location img {
+    width: 24px;
+    height: 25px;
+
+    @media only screen and (max-width: 744px) {
+        width: 15px;
+        height: 18px;
+    }
+}
+
+.email img {
+    @media only screen and (max-width: 744px) {
+        width: 19px;
+        height: 15px;
+    }
+}
+
+.phone img {
+    @media only screen and (max-width: 744px) {
+        width: 17px;
+        height: 17px;
+    }
+}
+
+.foot_data {
+    @media only screen and (max-width: 744px) {
+        margin-top: 30px;
+    }
+}
+
+.foot_data a {
+    margin-bottom: 12px;
+
+    display: block;
+
+    font-size: 16px;
+    color: #000000;
+}
+
+#footdata_head {
+    font-size: 20px;
+    font-weight: 500;
+
+    @media only screen and (max-width: 744px) {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+.pages {
+    position: relative;
+    left: 400px;
+
+    @media only screen and (max-width: 744px) {
+        left: 40px;
+    }
+}
+
+.company {
+    position: relative;
+    left: 200px;
+
+    @media only screen and (max-width: 744px) {
+        left: 35px;
+    }
+}
+
+.faq {
+    margin-top: 30px;
+
+    @media only screen and (max-width: 744px) {
+        margin-top: 60px;
+    }
+}
+
+footer::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #a4a4a4;
+    position: relative;
+    display: block;
+    top: 230px;
+
+    @media only screen and (max-width: 744px) {
+        top: 270px;
+    }
+}
+
+.footer_last {
+    margin-top: 70px;
+
+    display: flex;
+    justify-content: space-between;
+
+    color: #606060;
+
+    @media only screen and (max-width: 744px) {
+        margin-top: 82px;
+    }
+}
+
+.footer_last p {
+    margin: 0;
+}
+
+#desg_name {
+    color: #333333;
+    margin: 0;
+}

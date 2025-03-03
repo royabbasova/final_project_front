@@ -1,0 +1,679 @@
+* {
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+
+body {
+    margin: 0;
+    padding-top: 204px;
+
+    @media only screen and (max-width: 744px) {
+        padding-top: 116px;
+    }
+}
+
+/*NAVBAR*/
+
+nav {
+    padding: 5px 80px;
+
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+
+    border-bottom: 1px solid #e8e8e8;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #ffffff;
+
+    @media only screen and (max-width: 744px) {
+        padding: 16px;
+
+        font-size: 16px;
+        width: 744px;
+    }
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.logo_img {
+    width: 96px;
+    height: 130px;
+
+    @media only screen and (max-width: 744px) {
+        width: 62px;
+        height: 80px;
+    }
+}
+
+.nav_pages {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+
+    list-style-type: none;
+}
+
+.nav_pages a {
+    color: #000000;
+
+    transition: all 0.2s ease;
+}
+
+.nav_pages :last-child {
+    margin-right: 0;
+}
+
+.nav_pages a:hover {
+    color: #258d8a;
+}
+
+.nav_pages li {
+    margin-right: 46.3px;
+
+    @media only screen and (max-width: 744px) {
+        margin-right: 24px;
+    }
+}
+
+.registr_btns {
+    display: flex;
+    align-items: center;
+}
+
+.registr_btns a {
+    padding: 13.5px 24px;
+}
+
+#login_btn {
+    margin-right: 12px;
+
+    color: #04404b;
+    border: 1px solid #076c7d;
+    border-radius: 12px;
+
+    transition: all 0.5s ease;
+}
+
+#login_btn:hover {
+    background-color: #C0F6FF;
+}
+
+#signup_btn {
+    background-color: #076c7d;
+    color: #ffffff;
+    border: 1px solid transparent;
+    border-radius: 12px;
+
+    transition: all 0.5s ease;
+}
+
+#signup_btn:hover {
+    background-color: #04404b;
+}
+
+/*MAIN*/
+
+main {
+    padding: 35px 80px;
+
+    @media only screen and (max-width: 744px) {
+        padding: 16px;
+    }
+}
+
+.link_details ul {
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+
+    list-style-type: none;
+    font-size: 28px;
+    font-weight: 500;
+
+    @media only screen and (max-width: 744px) {
+        font-size: 20px;
+    }
+}
+
+.link_details img {
+    margin: 0 20px;
+
+    width: 6px;
+    height: 12px;
+}
+
+.link_details a {
+    color: #000000;
+}
+
+.link_details ul:last-child {
+    color: #258d8a;
+}
+
+/*---------------------------*/
+
+#hospital_details h1 {
+    margin-bottom: 30px;
+
+    font-size: 40px;
+    font-weight: 500;
+
+    @media only screen and (max-width: 744px) {
+        font-size: 28px;
+
+        margin-bottom: 12px;
+    }
+}
+
+#hospital_details {
+    margin-top: 40px;
+
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 744px) {
+        margin: 24px 0;
+    }
+}
+
+.text p {
+    padding-right: 60px;
+    font-size: 24px;
+    font-weight: 200;
+
+    @media only screen and (max-width: 744px) {
+        font-size: 16px;
+
+        width: 346px;
+
+        padding-right: 0;
+        margin-right: 20px;
+    }
+}
+
+/*BOOTSTRAP*/
+
+.carousel-item {
+    width: 630px!important;
+
+    @media only screen and (max-width: 744px) {
+        width: 346px !important;
+    }
+}
+
+.carousel-item img {
+    border-radius: 8px;
+    object-fit: cover;
+    height: 570px; 
+    width: 630px;
+
+    @media only screen and (max-width: 744px) {
+        width: 346px !important; 
+        height: 364px;
+    }
+}
+.carousel-indicators button {
+    width: 24px!important;
+    height: 24px!important;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid white;
+
+    @media only screen and (max-width: 744px) {
+        width: 20px !important;
+        height: 20px !important;
+    }
+}
+.carousel-indicators .active {
+    background-color: white; 
+}
+
+.carousel-indicators {
+    @media only screen and (max-width: 744px) {
+        width: 346px;
+        margin: 0 0 40px 10px !important;
+    }
+}
+
+/*---------------------------*/
+
+#search_container h2 {
+    margin: 0;
+
+    font-size: 40px;
+    font-weight: 500;
+
+    @media only screen and (max-width: 744px) {
+        font-size: 22px;
+    }
+}
+
+.search_filter {
+    margin: 36px 0;
+
+    display: flex;
+
+    @media only screen and (max-width: 744px) {
+        margin: 16px 0 32px;
+    }
+}
+
+.search_filter input {
+    padding: 16px 24px;
+
+    width: 800px;
+    height: 56px;
+
+    font-size: 20px;
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+
+    @media only screen and (max-width: 744px) {
+        font-size: 18px;
+
+        width: 540px;
+        height: 48px;
+    }
+}
+
+#lupa {
+    position: relative;
+    right: 50px;
+    top: 15px;
+
+    @media only screen and (max-width: 744px) {
+        top: 10px;
+
+        width: 22px;
+        height: 22px;
+    }
+}
+
+#filter {
+    padding-right: 30px;
+
+    text-align: center;
+    font-size: 24px;
+    color: #04404b;
+    border: 1px solid #076c7d;
+    border-radius: 12px;
+
+    appearance: none;
+
+    transition: all 0.5s ease;
+
+    @media only screen and (max-width: 744px) {
+        font-size: 18px;
+
+        padding: 0 40px 0 20px;
+    }
+}
+
+#filter:hover {
+    background-color: #076c7d;
+    color: #ffffff;
+}
+
+#select_icon {
+    width: 24px;
+    height: 24px;
+
+    position: relative;
+    right: 35px;
+    top: 15px;
+
+    pointer-events: none;
+
+    @media only screen and (max-width: 744px) {
+        top: 12px;
+        right: 45px;
+    }
+}
+
+/*---------------------------*/
+
+#doctors_container h4 {
+    font-size: 40px;
+    font-weight: 500;
+
+    @media only screen and (max-width: 744px) {
+        margin: 0;
+
+        font-size: 22px;
+    }
+}
+
+.doctor_detail {
+    display: flex;
+    align-items: center;
+}
+
+.doctors_list {
+    padding: 24px 0;
+
+    list-style-type: none;
+
+    @media only screen and (max-width: 744px) { 
+        margin-top: 0;
+        padding: 16px 0;
+    }
+}
+
+.doctor {
+    padding: 24px 24px 48px 24px;
+    margin-bottom: 48px;
+
+    display: flex;
+    justify-content: space-between;
+
+    border: 1px solid #d2d2d2;
+    border-radius: 24px;
+
+    @media only screen and (max-width: 744px) {
+        padding: 16px;
+        margin-bottom: 24px;
+    }
+}
+
+#doctor_img {
+    width: 253px;
+    height: 260px;
+
+    @media only screen and (max-width: 744px) {
+        width: 150px;
+        height: 150px;   
+    }
+}
+
+.rate_container {
+    display: flex;
+    justify-content: flex-end;
+
+    list-style-type: none;
+}
+
+.rate_container img {
+    width: 23px;
+    height: 22px;
+
+    @media only screen and (max-width: 744px) {
+        width: 17px;
+        height: 16px;
+    }
+}
+
+.doctor_info {
+    list-style-type: none;
+}
+
+#doctor_name a {
+    font-size: 36px;
+    font-weight: 500;
+    color: #000000;
+
+    @media only screen and (max-width: 744px) {
+        font-size: 28px;
+    }
+}
+
+#doctor_field {
+    margin: 10px 0 20px;
+
+    font-size: 28px;
+    color: #606060;
+
+    @media only screen and (max-width: 744px) {
+        font-size: 22px;
+
+        margin: 8px 0 16px;
+    }
+}
+
+#doctor_hospital {
+    font-size: 24px;
+    color: #333333;
+
+    @media only screen and (max-width: 744px) {
+        font-size: 20px;
+    }
+}
+
+#doctor_hospital img {
+    margin: 6px 15px 0 0;
+    width: 15px;
+    height: 18px;
+
+    @media only screen and (max-width: 744px) {
+        width: 14px;
+        height: 17px;
+
+        margin-right: 6px;
+    }
+}
+
+#visit_btn {
+    padding: 13.5px 24px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+
+    background-color: #076c7d;
+    color: #ffffff;
+
+    font-size: 24px;
+    font-weight: 600;
+
+    transition: all 0.5s ease;
+
+    @media only screen and (max-width: 744px) {
+        font-size: 18px;
+
+        padding: 13px 24px;
+    }
+}
+
+#visit_btn:hover {
+    background-color: #04404b;
+}
+
+.rate_and_btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*FOOTER*/
+
+footer {
+    padding: 36px 80px;
+    background-color: #d1f3f2;
+
+    @media only screen and (max-width: 744px) {
+        padding: 24px 16px;
+    }
+}
+
+.foot_container {
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    list-style-type: none;
+}
+
+.contact_us {
+    display: flex;
+
+    @media only screen and (max-width: 744px) {
+        margin-top: 40px;
+    }
+}
+
+.contact_list {
+    margin-top: 10px;
+
+    list-style-type: none;
+
+    font-size: 20px;
+
+    @media only screen and (max-width: 744px) {
+        margin-top: 0;
+
+        font-size: 16px;
+    }
+}
+
+.contact_list img {
+    margin-right: 10px;
+}
+
+.contact_list li {
+    margin-bottom: 10px;
+
+    @media only screen and (max-width: 744px) {
+        margin-bottom: 14.5px;
+    }
+}
+
+.social {
+    position: relative;
+    top: 40px;
+    right: 135px;
+
+    @media only screen and (max-width: 744px) {
+        top: 10px;
+        right: 100px;
+    }
+}
+
+.social img {
+    width: 30px;
+    height: 30px;
+
+    @media only screen and (max-width: 744px) {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.location img {
+    width: 24px;
+    height: 25px;
+
+    @media only screen and (max-width: 744px) {
+        width: 15px;
+        height: 18px;
+    }
+}
+
+.email img {
+    @media only screen and (max-width: 744px) {
+        width: 19px;
+        height: 15px;
+    }
+}
+
+.phone img {
+    @media only screen and (max-width: 744px) {
+        width: 17px;
+        height: 17px;
+    }
+}
+
+.foot_data {
+    @media only screen and (max-width: 744px) {
+        margin-top: 30px;
+    }
+}
+
+.foot_data a {
+    margin-bottom: 12px;
+
+    display: block;
+
+    font-size: 16px;
+    color: #000000;
+}
+
+#footdata_head {
+    font-size: 20px;
+    font-weight: 500;
+
+    @media only screen and (max-width: 744px) {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+.pages {
+    position: relative;
+    left: 400px;
+
+    @media only screen and (max-width: 744px) {
+        left: 40px;
+    }
+}
+
+.company {
+    position: relative;
+    left: 200px;
+
+    @media only screen and (max-width: 744px) {
+        left: 35px;
+    }
+}
+
+.faq {
+    margin-top: 30px;
+
+    @media only screen and (max-width: 744px) {
+        margin-top: 60px;
+    }
+}
+
+footer::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #a4a4a4;
+    position: relative;
+    display: block;
+    top: 230px;
+
+    @media only screen and (max-width: 744px) {
+        top: 270px;
+    }
+}
+
+.footer_last {
+    margin-top: 70px;
+
+    display: flex;
+    justify-content: space-between;
+
+    color: #606060;
+
+    @media only screen and (max-width: 744px) {
+        margin-top: 82px;
+    }
+}
+
+.footer_last p {
+    margin: 0;
+}
+
+#desg_name {
+    color: #333333;
+    margin: 0;
+}

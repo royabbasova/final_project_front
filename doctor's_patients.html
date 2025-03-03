@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./doctor's_patients.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <title>Doctor's Patients</title>
+</head>
+
+<body>
+
+    <nav>
+
+        <a href="#home_page" class="logo">
+            <img src="./images/logo.png" alt="" class="logo_img">
+        </a>
+
+        <ul class="nav_pages">
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Doctors</a>
+            </li>
+            <li>
+                <a href="#">Hospitals</a>
+            </li>
+            <li>
+                <a href="#">Contact Us</a>
+            </li>
+        </ul>
+
+        <div class="nav_profile">
+            <img class="notification" src="./images/notification.png" alt="">
+            <img class="p_icon" src="./images/profile_photo.png" alt="">
+        </div>
+
+    </nav>
+
+    <main>
+
+        <h3>Patients</h3>
+
+        <div class="search_container">
+
+            <button id="filter_all">All</button>
+            <button id="filter_birthdate">Birthdate</button>
+            <button id="filter_appointment">Appointment date</button>
+
+            <div class="search">
+                <input type="text" id="search" placeholder="Name, surname">
+                <img src="./images/search.png" alt="">
+            </div>
+            
+        </div>
+
+        <div class="add">
+            <button id="add_patient">
+                <img src="./images/plus.png" alt="">
+                Add Patient
+            </button>
+        </div>
+        
+        <ul class="patients_table">
+
+            <li class="table_head">
+                <ul class="thead">
+                    <li>Name</li>
+                    <li>Surname</li>
+                    <li>Birthdate</li>
+                    <li>Date</li>
+                    <li>Time</li>
+                </ul>
+            </li>
+
+            <li class="table_body">
+                <ul class="tbody">
+                    <li class="photo_and_name">
+                        <img src="./images/patient.png" alt="">Arzu
+                    </li>
+                    <li>Quliyeva</li>
+                    <li>12.06.1994</li>
+                    <li>03.21.2025</li>
+                    <li>14:30</li>
+                </ul>
+            </li>
+
+            <li class="table_body">
+                <ul class="tbody">
+                    <li class="photo_and_name">
+                        <img src="./images/patient.png" alt="">Arzu
+                    </li>
+                    <li>Quliyeva</li>
+                    <li>12.06.1994</li>
+                    <li>03.21.2025</li>
+                    <li>14:30</li>
+                </ul>
+            </li>
+
+        </ul>
+
+
+    </main>
+
+    <footer>
+
+        <ul class="foot_container">
+
+            <li class="contact_us">
+
+                <a href="#home_page" class="logo">
+                    <img src="./images/logo.png" alt="" class="logo_img">
+                </a>
+
+                <ul class="contact_list">
+                    <li class="location">
+                        <img src="./images/location.png" alt="">Baku, Khatai 29
+                    </li>
+                    <li class="email">
+                        <img src="./images/email.png" alt="">info@remz.com
+                    </li>
+                    <li class="phone">
+                        <img src="./images/phone.png" alt="">+994513102525
+                    </li>
+                    <li class="social">
+                        <img src="./images/facebook.png" alt="">
+                        <img src="./images/instagram.png" alt="">
+                    </li>
+                </ul>
+
+            </li>
+
+            <li class="foot_data pages">
+
+                <a id="footdata_head" href="#">Pages</a>
+                <a href="#">Home</a>
+                <a href="#">Doctors</a>
+                <a href="#">Hospitals</a>
+                <a href="#">Account</a>
+
+            </li>
+
+            <li class="foot_data company">
+
+                <a id="footdata_head" href="#">Company</a>
+                <a href="#">About Us</a>
+                <a href="#">Our families</a>
+                <a href="#">Subscriptions</a>
+                <a href="#">Contact Us</a>
+
+            </li>
+
+            <li class="foot_data faq">
+
+                <a href="#">FAQ</a>
+                <a href="#">Privacy Policy</a>
+
+            </li>
+
+        </ul>
+
+        <div class="footer_last">
+            <span>Copyright ©</span>
+            <p>Design by <span id="desg_name">Mahsati Jalilli</span></p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

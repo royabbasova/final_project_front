@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./create_account.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <title>Create Account</title>
+
+</head>
+
+<body>
+
+
+    <section id="green_zone">
+        
+        <div class="text">
+            
+            <h4>
+                Welcome back!
+            </h4>
+            
+            <p>
+                We’re happy to have you back! Let’s get started.
+            </p>
+            
+            <a id="login_btn" href="#">Log in</a>
+            
+        </div>
+        
+    </section>
+    
+    <section id="create_account">
+        
+        <a href="#homepage" class="logo">
+            <img id="logo_img" src="./images/logo.png" alt="">
+        </a>
+
+        <h3>
+            Create Account
+        </h3>
+
+        <p class="description">
+            Register Today for Easy Access to Expert Care.
+        </p>
+
+        <form action="" method="">
+            <div class="form_group">
+                <input type="text" id="first_name" name="first_name" placeholder="First name" required>
+            </div>
+
+            <div class="form_group">
+                <input type="text" id="last_name" name="last_name" placeholder="Last name" required>
+            </div>
+
+            <div class="form_group">
+                <input type="text" id="birthday" name="birthday" placeholder="Date of birth"
+                    onfocus="(this.type='date')" onblur="(this.type='text')" required>
+            </div>
+
+            <div class="form_group">
+                <input type="text" id="fin_code" name="fin_code" placeholder="FIN code" required>
+            </div>
+
+            <div class="form_group">
+                <input type="email" id="email" name="email" placeholder="Email address" required>
+            </div>
+
+            <div class="form_group phone_group">
+                <select id="phone_code" name="phone_code">
+                    <option value="+994" selected>+994</option>
+                </select>
+                <input type="tel" id="phone" name="phone" placeholder="Phone number" required>
+            </div>
+
+            <div class="form_group choose_file">
+                <label for="photo" class="photo_file">
+                    Choose photo
+
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+                    <img src="./images/upload.png" alt="">
+                </label>
+            </div>
+
+            <div class="form_group password_container">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <img src="./images/eyeicon.png" alt="">
+            </div>
+
+            <div class="form_group password_container">
+                <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm password"
+                    required>
+                <img src="./images/eyeicon.png" alt="">
+            </div>
+
+            <div class="checkbox">
+                <input type="checkbox" id="remember_me" name="remember_me">
+                <label for="remember_me">Remember me</label>
+            </div>
+
+            <div class="btn_group">
+                <a class="btn_cancel" href="">Cancel</a>
+                <a class="btn_signup" href="#">Sign Up</a>
+            </div>
+        </form>
+
+        <p class="foot_login">
+            Already have an account?
+            <a href="#">Log in</a>
+        </p>
+
+    </section>
+
+
+</body>
+
+</html>

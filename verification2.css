@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.general_container {
+    padding: 29px 36px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+    @media only screen and (max-width: 744px) {
+        padding: 24px 16px;
+    }
+}
+
+.head {
+    display: flex;
+}
+
+#cancel_btn {
+    width: 36px;
+    height: 36px;
+
+    @media only screen and (max-width: 744px) {
+        width: 28px;
+        height: 28px;
+    }
+}
+
+.general_container h2 {
+    font-size: 32px;
+    margin: 0;
+    margin-right: 20px;
+    font-weight: 500;
+
+    @media only screen and (max-width: 744px) {
+        font-size: 22px;
+        font-weight: 400;
+        text-align: start;
+    }
+}
+.code_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin: 72px 0 72px 85px;
+
+    @media only screen and (max-width: 744px) {
+        margin: 36px 0 36px 80px;
+    }
+}
+.code_input {
+    width: 60px;
+    text-align: center;
+    font-size: 24px;
+    border: none;
+    border-bottom: 5px solid #000000;
+    outline: none;
+
+    @media only screen and (max-width: 744px) {
+        width: 56px;
+    }
+}
+.timer {
+    font-size: 32px;
+    position: relative;
+    left: 230px;
+
+    @media only screen and (max-width: 744px) {
+        font-size: 24px;
+
+        left: 125px;
+    }
+}
+.btn_container {
+    display: flex;
+    justify-content: center;
+}
+.resend_btn {
+    background: none;
+    border: 1px solid #d00416;
+    border-radius: 12px;
+    color: #d00416;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 16px 24px;
+    margin-right: 40px;
+
+    transition: all 0.5s ease;
+
+    @media only screen and (max-width: 744px) {
+        font-size: 18px;
+
+        margin-right: 56px;
+    }
+}
+.resend_btn:hover {
+    background-color: #FFD2D6;
+}
+.confirm_btn {
+    background: #1fc16b;
+    border: 1px solid #1fc16b;
+    border-radius: 12px;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 16px 24px;
+    color: #ffffff;
+
+    transition: all 0.5s ease;
+
+    @media only screen and (max-width: 744px) {
+        font-size: 18px;
+    }
+}
+.confirm_btn:hover {
+    background-color: #159A53;
+}

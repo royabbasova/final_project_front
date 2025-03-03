@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+
+body {
+    padding: 36px 80px;
+    margin: 0;
+
+    height: 100vh;
+
+    @media only screen and (max-width: 744px) {
+        padding: 10px;
+    }
+}
+
+.calendar_container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 45px;
+    border: 1px solid #000000;
+    padding: 36px 16px;
+    border-radius: 12px;
+
+    @media only screen and (max-width: 744px) {
+        padding: 24px 16px;
+
+        justify-content: flex-start;
+
+        gap: 36px;
+    }
+}
+.date_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #04404b;
+    padding-right: 24px;
+
+    @media only screen and (max-width: 744px) {
+        padding-right: 16px;
+    }
+}
+.date_column:last-child {
+    border-right: none;
+}
+.date {
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-decoration: underline #04404b;
+    font-size: 28px;
+
+    @media only screen and (max-width: 744px) {
+        font-size: 24px;
+    }
+}
+
+.time_button {
+    display: block;
+    padding: 10px 33px;
+    border: 1px solid #04404b;
+    border-radius: 5px;
+    background: none;
+    margin-top: 36px;
+    font-size: 30px;
+    color: #04404b;
+
+    transition: all 0.5s ease;
+
+    @media only screen and (max-width: 744px) {
+        font-size: 22px;
+
+        width: 120px;
+        height: 48px;
+    }
+}
+
+.time_button:hover {
+    background-color: #C0F6FF;
+}
+
+.hide {
+    background-color: #ffffff;
+    border: 1px solid #076c7d;
+    border-radius: 12px;
+    font-size: 24px;
+    color: #04404b;
+    padding: 13.5px 24px;
+    margin-top: 40px;
+
+    transition: all 0.5s ease;
+
+    @media only screen and (max-width: 744px) {
+        font-size: 18px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.hide:hover {
+    background-color: #C0F6FF;
+}
+
+.hide img {
+    @media only screen and (max-width: 744px) {
+        width: 24px;
+        height: 24px;
+
+        margin-right: 12px;
+    }
+}

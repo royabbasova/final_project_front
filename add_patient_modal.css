@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    font-family: "Inter", serif;
+}
+
+.add_patient_container {
+    padding: 24px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+}
+
+.add_patient_form {
+    padding: 24px 0;
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.add_patient_form label {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.add_patient_form input {
+    padding: 16px 24px;
+    margin-bottom: 24px;
+
+    width: 470px;
+
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+.name label {
+    margin-right: 70px;
+}
+
+.surname label {
+    margin-right: 33px;
+}
+
+.birthdate label {
+    margin-right: 30px;
+}
+
+.email input {
+    margin-left: 48px;
+}
+
+.phone input {
+    margin-left: 37px;
+}
+
+.fin input {
+    margin-left: 75px;
+}
+
+.cancel_btn {
+    text-align: end;
+
+    padding: 10px 0;
+}
+
+.cancel_btn img {
+    width: 36px;
+    height: 36px;
+}
+
+.confirm {
+    text-align: end;
+}
+
+.confirm button {
+    padding: 16px 24px;
+
+    background-color: #1fc16b;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+
+    border: none;
+    border-radius: 12px;
+
+    transition: all 0.5s ease;
+}
+
+.confirm button:hover {
+    background-color: #159A53;
+}
