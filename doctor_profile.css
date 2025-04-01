@@ -6,8 +6,9 @@
 body {
     margin: 0;
     padding-top: 150px;
+    overflow: hidden;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         padding-top: 116px;
     }
 }
@@ -30,7 +31,7 @@ nav {
     z-index: 1000;
     background-color: #ffffff;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         padding: 16px;
 
         width: 744px;
@@ -47,7 +48,7 @@ a {
     width: 96px;
     height: 130px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 62px;
         height: 80px;
     }
@@ -80,7 +81,7 @@ a {
 .nav_pages li {
     margin-right: 46.3px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-right: 24px;
     }
 }
@@ -99,7 +100,7 @@ a {
 
     cursor: pointer;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 32px;
         height: 32px;
     }
@@ -108,9 +109,66 @@ a {
 .p_icon {
     cursor: pointer;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 70px;
         height: 70px;
+    }
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 200px;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+}
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px 0;
+}
+.menu.show {
+    display: flex;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 743px) {
+    .logo_img {
+        width: 40px;
+        height: 51px;
+    }
+
+    nav {
+        padding: 8px 16px;
+        width: 375px;
+    }
+    
+    .nav_pages, .nav_profile {
+        display: none;
+    }
+
+    .registr_btns {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    body {
+        padding-top: 70px;
     }
 }
 
@@ -120,7 +178,7 @@ main {
     padding: 24px 80px;
     margin-bottom: 200px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         padding: 16px;
     }
 }
@@ -131,7 +189,7 @@ main {
     font-size: 48px;
     font-weight: bold;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         font-size: 28px;
 
         margin-bottom: 16px;
@@ -149,7 +207,7 @@ main {
 
     width: 974px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 530px;
     }
 }
@@ -159,7 +217,7 @@ label {
 
     font-size: 30px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         font-size: 24px;
     }
 }
@@ -179,7 +237,7 @@ input {
 
     font-size: 24px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         font-size: 20px;
 
         margin-bottom: 12px;
@@ -194,7 +252,7 @@ input {
 .name label {
     margin-right: 65px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-right: 57px;
     }
 }
@@ -202,7 +260,7 @@ input {
 .surname label {
     margin-right: 21px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-right: 22px;
     }
 }
@@ -210,7 +268,7 @@ input {
 .email label {
     margin-right: 73px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-right: 63px;
     }
 }
@@ -218,7 +276,7 @@ input {
 .phone label {
     margin-right: 58px;
     
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-right: 52px;
     }
 }
@@ -226,7 +284,7 @@ input {
 .fin label {
     margin-right: 98px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-right: 85px;
     }
 }
@@ -234,7 +292,7 @@ input {
 .hcode label {
     margin-right: 44px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-right: 40px;
     }
 }
@@ -254,7 +312,7 @@ input {
 
     transition: all 0.5s ease;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         font-size: 18px;
     }
 }
@@ -269,7 +327,7 @@ input {
 
     margin-top: 8px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-top: 4px;
     }
 }
@@ -280,7 +338,7 @@ input {
 }
 
 .profile_photoB {
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 166px;
         height: 166px;
     }
@@ -301,7 +359,7 @@ input {
 }
 
 #change img, #bin img {
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 22px;
         height: 22px;
     }
@@ -318,8 +376,85 @@ input {
     background-color: #ffffff;
     border-radius: 12px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         padding: 16px;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 743px) {
+    main {
+        padding: 16px;
+    }
+
+    .profile {
+        font-size: 24px;
+    }
+
+    .profile_container {
+        flex-direction: column-reverse;
+    }
+
+    .profile_photoB {
+        width: 120px;
+        margin-right: 16px;
+    }
+
+    .edit_btns {
+        align-items: center;
+    }
+
+    .edit_btns img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .edit_btns button {
+        padding: 16px;
+    }
+
+    .profile_photo_edit {
+        flex-direction: row;
+    }
+
+    .doctor_data input {
+        font-size: 16px;
+        width: 256px;
+    }
+
+    .doctor_data label {
+        font-size: 18px;
+    }
+
+    .name label {
+        margin-right: 40px;
+    }
+
+    .surname label {
+        margin-right: 15px;
+    }
+
+    .email label {
+        margin-right: 45px;
+    }
+
+    .phone label {
+        margin-right: 35px;
+    }
+
+    .fin label {
+        margin-right: 60px;
+    }   
+
+    .hcode label {
+        margin-right: 25px;
+    }
+
+    .save_changes {
+        width: 350px;
+    }
+
+    #save_btn {
+        font-size: 16px;
     }
 }
 
@@ -329,7 +464,7 @@ footer {
     padding: 36px 80px;
     background-color: #d1f3f2;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         padding: 24px 16px;
     }
 }
@@ -346,7 +481,7 @@ footer {
 .contact_us {
     display: flex;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-top: 40px;
     }
 }
@@ -358,7 +493,7 @@ footer {
 
     font-size: 20px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-top: 0;
 
         font-size: 16px;
@@ -372,7 +507,7 @@ footer {
 .contact_list li {
     margin-bottom: 10px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-bottom: 14.5px;
     }
 }
@@ -382,7 +517,7 @@ footer {
     top: 40px;
     right: 135px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         top: 10px;
         right: 100px;
     }
@@ -392,7 +527,7 @@ footer {
     width: 30px;
     height: 30px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 24px;
         height: 24px;
     }
@@ -402,28 +537,28 @@ footer {
     width: 24px;
     height: 25px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 15px;
         height: 18px;
     }
 }
 
 .email img {
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 19px;
         height: 15px;
     }
 }
 
 .phone img {
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 17px;
         height: 17px;
     }
 }
 
 .foot_data {
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-top: 30px;
     }
 }
@@ -441,37 +576,19 @@ footer {
     font-size: 20px;
     font-weight: 500;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         font-size: 16px;
         font-weight: 600;
     }
 }
 
-.pages {
-    position: relative;
-    left: 400px;
+.foot_menu {
+    display: flex;
+    justify-content: space-between;
 
-    @media only screen and (max-width: 744px) {
-        left: 40px;
-    }
+    width: 378px;
 }
 
-.company {
-    position: relative;
-    left: 200px;
-
-    @media only screen and (max-width: 744px) {
-        left: 35px;
-    }
-}
-
-.faq {
-    margin-top: 30px;
-
-    @media only screen and (max-width: 744px) {
-        margin-top: 60px;
-    }
-}
 
 footer::before {
     content: "";
@@ -482,7 +599,7 @@ footer::before {
     display: block;
     top: 230px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         top: 270px;
     }
 }
@@ -495,7 +612,7 @@ footer::before {
 
     color: #606060;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-top: 82px;
     }
 }
@@ -507,4 +624,63 @@ footer::before {
 #desg_name {
     color: #333333;
     margin: 0;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 743px) {
+    footer {
+        padding: 24px 16px;
+    }
+
+    .foot_container {
+        flex-direction: column;
+    }
+
+    .contact_list {
+        padding-left: 24px;
+        margin-top: 0;
+
+        font-size: 16px;
+    }
+
+    .contact_list li {
+        display: flex;
+        align-items: center;
+    }
+    
+    .contact_list img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .pages {
+        left: 0;
+    }
+
+    #foot_logo {
+        width: 62px;
+        height: 80px;
+    }
+
+    .social {
+        top: 24px;
+        right: 90px;
+    }
+
+    .social img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .foot_data a, #footdata_head {
+        font-size: 16px;
+    }
+
+    .foot_menu{
+        width: 343px;
+        padding-top: 32px;
+    }
+
+    footer::before {
+        top: 380px;
+    }
 }

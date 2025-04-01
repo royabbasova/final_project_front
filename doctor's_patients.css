@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding-top: 150px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         padding-top: 116px;
     }
 }
@@ -30,7 +30,7 @@ nav {
     z-index: 1000;
     background-color: #ffffff;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         padding: 16px;
 
         width: 744px;
@@ -47,7 +47,7 @@ a {
     width: 96px;
     height: 130px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 62px;
         height: 80px;
     }
@@ -80,7 +80,7 @@ a {
 .nav_pages li {
     margin-right: 46.3px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-right: 24px;
     }
 }
@@ -99,7 +99,7 @@ a {
 
     cursor: pointer;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 32px;
         height: 32px;
     }
@@ -108,7 +108,7 @@ a {
 .p_icon {
     cursor: pointer;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 70px;
         height: 70px;
     }
@@ -120,7 +120,7 @@ main {
     padding: 24px 80px;
     margin-bottom: 200px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         padding: 16px;
     }
 }
@@ -131,7 +131,7 @@ h3 {
     font-size: 48px;
     font-weight: bold;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         font-size: 28px;
 
         margin-bottom: 24px;
@@ -143,7 +143,7 @@ h3 {
 .search_container {
     display: flex;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         height: 48px;
     }
 }
@@ -159,7 +159,7 @@ h3 {
     font-size: 20px;
     font-weight: 500;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         font-size: 16px;
 
         margin-right: 8px;
@@ -168,19 +168,19 @@ h3 {
 }
 
 #filter_all {
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 67px;
     }
 }
 
 #filter_birthdate {
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 114px;
     }
 }
 
 #filter_appointment {
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 176px;
 
         padding: 14.5px 10px;
@@ -197,7 +197,7 @@ h3 {
     font-size: 20px;
     color: #606060;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         font-size: 18px;
     }
 }
@@ -214,7 +214,7 @@ h3 {
     border: 1px solid #e8e8e8;
     border-radius: 12px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 331px;
     }
 }
@@ -223,7 +223,7 @@ h3 {
     width: 20px;
     height: 20px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 18px;
         height: 18px;
     }
@@ -235,7 +235,7 @@ h3 {
     display: flex;
     justify-content: flex-end;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin: 32px 0 16px;
     }
 }
@@ -255,7 +255,7 @@ h3 {
 
     transition: all 0.5s ease;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         font-size: 18px;
     }
 }
@@ -267,7 +267,7 @@ h3 {
 #add_patient img {
     margin-right: 12px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 22px;
         height: 22px;
     }
@@ -294,7 +294,7 @@ ul {
     font-size: 24px;
     font-weight: 500;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         font-size: 18px;
 
         padding: 8px 16px 8px 72px;
@@ -312,7 +312,7 @@ ul {
     border: 1px solid #d2d2d2;
     border-radius: 12px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         padding: 16px;
     }
 }
@@ -327,7 +327,7 @@ ul {
     font-weight: 400;
     color: #4a4a4a;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         font-size: 16px;
     }
 }
@@ -340,7 +340,7 @@ ul {
 .photo_and_name img {
     margin-right: 16px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 50px;
         height: 50px;
 
@@ -351,7 +351,7 @@ ul {
 .tbody li:first-child {
     margin-right: 230px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-right: 96px;
     }
 }
@@ -359,7 +359,7 @@ ul {
 .tbody li:nth-child(2) {
     margin-right: 210px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-right: 96px;
     }
 }
@@ -367,7 +367,7 @@ ul {
 .tbody li:nth-child(3) {
     margin-right: 210px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-right: 80px;
     }
 }
@@ -375,7 +375,7 @@ ul {
 .tbody li:nth-child(4) {
     margin-right: 140px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-right: 38px;
     }
 }
@@ -386,7 +386,7 @@ footer {
     padding: 36px 80px;
     background-color: #d1f3f2;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         padding: 24px 16px;
     }
 }
@@ -403,7 +403,7 @@ footer {
 .contact_us {
     display: flex;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-top: 40px;
     }
 }
@@ -415,7 +415,7 @@ footer {
 
     font-size: 20px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-top: 0;
 
         font-size: 16px;
@@ -429,7 +429,7 @@ footer {
 .contact_list li {
     margin-bottom: 10px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-bottom: 14.5px;
     }
 }
@@ -439,7 +439,7 @@ footer {
     top: 40px;
     right: 135px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         top: 10px;
         right: 100px;
     }
@@ -449,7 +449,7 @@ footer {
     width: 30px;
     height: 30px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 24px;
         height: 24px;
     }
@@ -459,28 +459,28 @@ footer {
     width: 24px;
     height: 25px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 15px;
         height: 18px;
     }
 }
 
 .email img {
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 19px;
         height: 15px;
     }
 }
 
 .phone img {
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 17px;
         height: 17px;
     }
 }
 
 .foot_data {
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-top: 30px;
     }
 }
@@ -498,7 +498,7 @@ footer {
     font-size: 20px;
     font-weight: 500;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         font-size: 16px;
         font-weight: 600;
     }
@@ -508,7 +508,7 @@ footer {
     position: relative;
     left: 400px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         left: 40px;
     }
 }
@@ -517,7 +517,7 @@ footer {
     position: relative;
     left: 200px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         left: 35px;
     }
 }
@@ -525,7 +525,7 @@ footer {
 .faq {
     margin-top: 30px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-top: 60px;
     }
 }
@@ -539,7 +539,7 @@ footer::before {
     display: block;
     top: 230px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         top: 270px;
     }
 }
@@ -552,7 +552,7 @@ footer::before {
 
     color: #606060;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-top: 82px;
     }
 }

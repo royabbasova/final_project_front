@@ -44,6 +44,15 @@
 
         </div>
 
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+        <div class="menu" id="menu">
+            <a href="#">Home</a>
+            <a href="#">Doctors</a>
+            <a href="#">Hospitals</a>
+            <a href="#">Contact Us</a>
+        </div>
+
     </nav>
 
     <main>
@@ -222,8 +231,8 @@
 
             <li class="contact_us">
 
-                <a href="#home_page" class="logo">
-                    <img src="./images/logo.png" alt="" class="logo_img">
+                <a href="#home_page" class="logo" id="foot_logo">
+                    <img src="./images/logo.png" alt="" class="logo_img" id="foot_logo">
                 </a>
 
                 <ul class="contact_list">
@@ -244,32 +253,34 @@
 
             </li>
 
-            <li class="foot_data pages">
+            <div class="foot_menu">
+                <li class="foot_data pages">
 
-                <a id="footdata_head" href="#">Pages</a>
-                <a href="#">Home</a>
-                <a href="#">Doctors</a>
-                <a href="#">Hospitals</a>
-                <a href="#">Account</a>
-
-            </li>
-
-            <li class="foot_data company">
-
-                <a id="footdata_head" href="#">Company</a>
-                <a href="#">About Us</a>
-                <a href="#">Our families</a>
-                <a href="#">Subscriptions</a>
-                <a href="#">Contact Us</a>
-
-            </li>
-
-            <li class="foot_data faq">
-
-                <a href="#">FAQ</a>
-                <a href="#">Privacy Policy</a>
-
-            </li>
+                    <a id="footdata_head" href="#">Pages</a>
+                    <a href="#">Home</a>
+                    <a href="#">Doctors</a>
+                    <a href="#">Hospitals</a>
+                    <a href="#">Account</a>
+    
+                </li>
+    
+                <li class="foot_data company">
+    
+                    <a id="footdata_head" href="#">Company</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Our families</a>
+                    <a href="#">Subscriptions</a>
+                    <a href="#">Contact Us</a>
+    
+                </li>
+    
+                <li class="foot_data faq">
+    
+                    <a href="#">FAQ</a>
+                    <a href="#">Privacy Policy</a>
+    
+                </li>
+            </div>
 
         </ul>
 
@@ -279,6 +290,8 @@
         </div>
 
     </footer>
+
+    <script src="./doctors.js"></script>
 
 </body>
 

@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding-top: 204px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         padding-top: 116px;
     }
 }
@@ -30,7 +30,7 @@ nav {
     z-index: 1000;
     background-color: #ffffff;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px){
         padding: 16px;
 
         font-size: 16px;
@@ -46,7 +46,7 @@ a {
     width: 96px;
     height: 130px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px){
         width: 62px;
         height: 80px;
     }
@@ -55,7 +55,7 @@ a {
 .nav_pages {
     margin: 0;
     padding: 0;
-
+    
     display: flex;
     align-items: center;
 
@@ -79,7 +79,7 @@ a {
 .nav_pages li {
     margin-right: 46.3px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px){
         margin-right: 24px;
     }
 }
@@ -120,12 +120,69 @@ a {
     background-color: #04404b;
 }
 
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 200px;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+}
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 10px 0;
+}
+.menu.show {
+    display: flex;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 743px) {
+    body {
+        padding-top: 68px;
+    }
+    
+    .logo_img {
+        width: 40px;
+        height: 51px;
+    }
+
+    nav {
+        padding: 8px 16px;
+    }
+    
+    .nav_pages {
+        display: none;
+    }
+
+    .registr_btns {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+
 /*MAIN*/
 
 main {
     padding: 35px 80px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         padding: 16px;
     }
 }
@@ -141,7 +198,7 @@ main {
     font-size: 28px;
     font-weight: 500;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         font-size: 20px;
     }
 }
@@ -161,6 +218,22 @@ main {
     color: #258d8a;
 }
 
+@media only screen and (min-width: 375px) and (max-width: 743px) {
+    main {
+        padding: 16px;
+    }
+
+    .link_details ul {
+        font-size: 18px;
+    }
+
+    .link_details img {
+        width: 6px;
+        height: 10px;
+    }
+    
+}
+
 /*---------------------------*/
 
 #hospital_details h1 {
@@ -169,7 +242,7 @@ main {
     font-size: 40px;
     font-weight: 500;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         font-size: 28px;
 
         margin-bottom: 12px;
@@ -182,7 +255,7 @@ main {
     display: flex;
     justify-content: space-between;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin: 24px 0;
     }
 }
@@ -192,7 +265,7 @@ main {
     font-size: 24px;
     font-weight: 200;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         font-size: 16px;
 
         width: 346px;
@@ -202,12 +275,33 @@ main {
     }
 }
 
+@media only screen and (min-width: 375px) and (max-width: 743px) {
+    #hospital_details h1 {
+        font-size: 24px;
+        margin: 16px 0 4px;
+    }
+
+    #hospital_details {
+        margin: 0;
+    }
+
+    #carouselExample {
+        display: none;
+    }
+
+    .text p {
+        font-size: 14px;
+        padding-right: 0;
+    } 
+    
+}
+
 /*BOOTSTRAP*/
 
 .carousel-item {
     width: 630px!important;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 346px !important;
     }
 }
@@ -218,7 +312,7 @@ main {
     height: 570px; 
     width: 630px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 346px !important; 
         height: 364px;
     }
@@ -230,7 +324,7 @@ main {
     background-color: rgba(255, 255, 255, 0.5);
     border: 1px solid white;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 20px !important;
         height: 20px !important;
     }
@@ -240,7 +334,7 @@ main {
 }
 
 .carousel-indicators {
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 346px;
         margin: 0 0 40px 10px !important;
     }
@@ -254,7 +348,7 @@ main {
     font-size: 40px;
     font-weight: 500;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         font-size: 22px;
     }
 }
@@ -264,7 +358,7 @@ main {
 
     display: flex;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin: 16px 0 32px;
     }
 }
@@ -279,7 +373,7 @@ main {
     border: 1px solid #e8e8e8;
     border-radius: 12px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         font-size: 18px;
 
         width: 540px;
@@ -292,7 +386,7 @@ main {
     right: 50px;
     top: 15px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         top: 10px;
 
         width: 22px;
@@ -313,7 +407,7 @@ main {
 
     transition: all 0.5s ease;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         font-size: 18px;
 
         padding: 0 40px 0 20px;
@@ -335,9 +429,53 @@ main {
 
     pointer-events: none;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         top: 12px;
         right: 45px;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 743px) {
+    #search_container h2 {
+        font-size: 20px;
+
+        margin: 16px 0;
+    }
+
+    #search_container p {
+        font-size: 16px;
+        padding: 4px 0 16px;
+    }
+
+    .search_filter input {
+        width: 200px;
+        height: 44px;
+
+        font-size: 16px;
+        padding: 16px;
+    }
+
+    .search_filter {
+        margin-top: 0;
+    }
+
+    #lupa {
+        right: 25px;
+        top: 8px;
+
+        width: 16px;
+        height: 16px;   
+    }
+
+    #filter {
+        font-size: 16px;
+        width: 110px;
+    }
+
+
+    #select_icon {
+        right: 30px;
+        top: 10px;
     }
 }
 
@@ -347,7 +485,7 @@ main {
     font-size: 40px;
     font-weight: 500;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin: 0;
 
         font-size: 22px;
@@ -364,7 +502,7 @@ main {
 
     list-style-type: none;
 
-    @media only screen and (max-width: 744px) { 
+    @media only screen and (min-width: 744px) and (max-width: 1100px) { 
         margin-top: 0;
         padding: 16px 0;
     }
@@ -380,7 +518,7 @@ main {
     border: 1px solid #d2d2d2;
     border-radius: 24px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         padding: 16px;
         margin-bottom: 24px;
     }
@@ -390,7 +528,7 @@ main {
     width: 253px;
     height: 260px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 150px;
         height: 150px;   
     }
@@ -407,7 +545,7 @@ main {
     width: 23px;
     height: 22px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 17px;
         height: 16px;
     }
@@ -422,7 +560,7 @@ main {
     font-weight: 500;
     color: #000000;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         font-size: 28px;
     }
 }
@@ -433,7 +571,7 @@ main {
     font-size: 28px;
     color: #606060;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         font-size: 22px;
 
         margin: 8px 0 16px;
@@ -444,7 +582,7 @@ main {
     font-size: 24px;
     color: #333333;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         font-size: 20px;
     }
 }
@@ -454,7 +592,7 @@ main {
     width: 15px;
     height: 18px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 14px;
         height: 17px;
 
@@ -475,7 +613,7 @@ main {
 
     transition: all 0.5s ease;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         font-size: 18px;
 
         padding: 13px 24px;
@@ -492,13 +630,73 @@ main {
     justify-content: space-between;
 }
 
+@media only screen and (min-width: 375px) and (max-width: 743px) {
+    #doctors_container h4 {
+        margin: 0;
+
+        font-size: 20px;
+    }
+
+    .doctors_list {
+        margin-top: 0;
+    }
+
+    #doctor_img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .rate_container img {
+        width: 16px;
+        height: 16px;
+    }
+
+    #doctor_name a, #doctor_field {
+        font-size: 14px;
+    }
+
+    #doctor_hospital {
+        font-size: 12px;
+    }
+
+    #doctor_field {
+        margin: 4px 0 12px;
+    }
+
+    #visit_btn {
+        padding: 10px 5px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .doctor {
+        padding: 12px 16px;
+        margin-bottom: 20px;
+    }
+
+    .doctor_info {
+        padding: 0 0 0 8px;
+    }
+
+    #doctor_hospital img {
+        margin-top: 0;
+        margin-right: 4px;
+        width: 10px;
+        height: 14px;
+    }
+
+    .rate_and_btn {
+        height: 180px;
+    }
+}
+
 /*FOOTER*/
 
 footer {
     padding: 36px 80px;
     background-color: #d1f3f2;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         padding: 24px 16px;
     }
 }
@@ -515,7 +713,7 @@ footer {
 .contact_us {
     display: flex;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-top: 40px;
     }
 }
@@ -527,7 +725,7 @@ footer {
 
     font-size: 20px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-top: 0;
 
         font-size: 16px;
@@ -541,7 +739,7 @@ footer {
 .contact_list li {
     margin-bottom: 10px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-bottom: 14.5px;
     }
 }
@@ -551,7 +749,7 @@ footer {
     top: 40px;
     right: 135px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         top: 10px;
         right: 100px;
     }
@@ -561,7 +759,7 @@ footer {
     width: 30px;
     height: 30px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 24px;
         height: 24px;
     }
@@ -571,28 +769,28 @@ footer {
     width: 24px;
     height: 25px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 15px;
         height: 18px;
     }
 }
 
 .email img {
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 19px;
         height: 15px;
     }
 }
 
 .phone img {
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 17px;
         height: 17px;
     }
 }
 
 .foot_data {
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-top: 30px;
     }
 }
@@ -610,36 +808,17 @@ footer {
     font-size: 20px;
     font-weight: 500;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         font-size: 16px;
         font-weight: 600;
     }
 }
 
-.pages {
-    position: relative;
-    left: 400px;
+.foot_menu {
+    display: flex;
+    justify-content: space-between;
 
-    @media only screen and (max-width: 744px) {
-        left: 40px;
-    }
-}
-
-.company {
-    position: relative;
-    left: 200px;
-
-    @media only screen and (max-width: 744px) {
-        left: 35px;
-    }
-}
-
-.faq {
-    margin-top: 30px;
-
-    @media only screen and (max-width: 744px) {
-        margin-top: 60px;
-    }
+    width: 378px;
 }
 
 footer::before {
@@ -651,7 +830,7 @@ footer::before {
     display: block;
     top: 230px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         top: 270px;
     }
 }
@@ -664,7 +843,7 @@ footer::before {
 
     color: #606060;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin-top: 82px;
     }
 }
@@ -676,4 +855,113 @@ footer::before {
 #desg_name {
     color: #333333;
     margin: 0;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 743px) {
+    footer {
+        padding: 24px 16px;
+    }
+
+    .foot_container {
+        flex-direction: column;
+    }
+
+    .contact_list {
+        padding-left: 24px;
+        margin-top: 0;
+
+        font-size: 16px;
+    }
+
+    .contact_list li {
+        display: flex;
+        align-items: center;
+    }
+    
+    .contact_list img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .pages {
+        left: 0;
+    }
+
+    #foot_logo {
+        width: 62px;
+        height: 80px;
+    }
+
+    .social {
+        top: 24px;
+        right: 90px;
+    }
+
+    .social img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .foot_data a, #footdata_head {
+        font-size: 16px;
+    }
+
+    .foot_menu{
+        width: 343px;
+        padding-top: 32px;
+    }
+
+    footer::before {
+        top: 380px;
+    }
+}
+
+/* Modal container */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Modal content */
+.modal_content {
+    position: relative;
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Close button */
+.modal_close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff5c5c;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Iframe inside modal */
+.modal_content iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
 }

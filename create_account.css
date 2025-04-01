@@ -27,7 +27,7 @@ a {
 .text {
     text-align: center;
     color: #ffffff;
-    
+
     position: relative;
     top: 300px;
 }
@@ -69,13 +69,33 @@ a {
     right: 750px;
     top: 70px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         right: 0;
         top: 0;
-    }    
+    }
+
+    @media only screen and (min-width: 375px) and (max-width: 743px) {
+        right: 0;
+        top: 50px;
+        width: 40px;
+        height: 51px;
+    }
 }
 
-@media only screen and (max-width: 744px) {
+@media only screen and (min-width: 375px) and (max-width: 743px) {
+    #logo_img {
+        width: 40px;
+        height: 51px;
+    }
+}
+
+@media only screen and (min-width: 744px) and (max-width: 1100px) {
+    #green_zone {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 743px) {
     #green_zone {
         display: none;
     }
@@ -89,7 +109,7 @@ a {
 
     width: 50%;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         width: 100%;
 
         padding: 27px 41px;
@@ -105,17 +125,17 @@ a {
     color: #04404b;
     text-align: center;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         margin: 107px 0 0;
 
         font-size: 28px;
-    }    
+    }
 }
 
 .description {
     display: none;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         display: block;
 
         margin: 10px 0 24px;
@@ -124,7 +144,7 @@ a {
         font-size: 22px;
         color: #04404b;
         font-weight: 500;
-    } 
+    }
 }
 
 .form_group {
@@ -221,7 +241,7 @@ a {
 .checkbox label {
     font-size: 17px;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         font-size: 16px;
 
         margin-left: 5px;
@@ -240,14 +260,14 @@ a {
 
 .btn_group a {
     padding: 13.5px 24px;
-    
+
     border: 1px solid #076c7d;
     border-radius: 12px;
 
     font-size: 24px;
     font-weight: 600;
 
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         font-size: 20px;
         font-weight: 500;
     }
@@ -268,7 +288,7 @@ a {
 
     color: #ffffff;
     background-color: #076c7d;
-    
+
     transition: all 0.5s ease;
 }
 
@@ -278,8 +298,8 @@ a {
 
 .foot_login {
     display: none;
-    
-    @media only screen and (max-width: 744px) {
+
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         display: block;
 
         margin: 114px 0 80px;
@@ -291,8 +311,51 @@ a {
 }
 
 .foot_login a {
-    @media only screen and (max-width: 744px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px) {
         color: #d00416;
         font-weight: 600;
+    }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 743px) {
+    #create_account {
+        width: 100%;
+        padding: 16px;
+    }
+
+    #create_account h3 {
+        font-size: 24px;
+        margin: 79px 0 4px;
+    }
+
+    .description {
+        display: block;
+        margin: 10px 0 24px;
+        text-align: center;
+        font-size: 18px;
+        color: #04404b;
+        font-weight: 500;
+    }
+
+    .form_group input, .photo_file, .checkbox, #phone_code {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .foot_login {
+        display: block;
+        margin: 24px 0;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .foot_login a {
+        color: #d00416;
+        font-weight: 600;
+    }
+
+    .btn_group a {
+        font-size: 16px;
+        font-weight: 500;
     }
 }
