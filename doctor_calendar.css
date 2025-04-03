@@ -87,7 +87,6 @@ body {
     font-size: 24px;
     color: #04404b;
     padding: 13.5px 24px;
-    margin-top: 40px;
 
     transition: all 0.5s ease;
 
@@ -111,4 +110,35 @@ body {
 
         margin-right: 12px;
     }
+}
+
+.btn_hide {
+    display: flex;
+    justify-content: space-between; /* Place Confirm on the left and Hide on the right */
+    align-items: center; /* Align buttons vertically */
+    margin-top: 20px; /* Add some space above the buttons */
+    padding: 0 20px; /* Add padding to the container */
+}
+
+.confirm_button {
+    padding: 13.5px 24px;
+    background-color: #076c7d;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.confirm_button:hover {
+    background-color: #04404b;
+}
+
+.hide img {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px; 
 }

@@ -121,29 +121,6 @@ a {
     display: none;
 }
 
-.menu {
-    position: absolute;
-    top: 50px;
-    right: 10px;
-    width: 200px;
-    background: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    padding: 15px;
-    display: none;
-    flex-direction: column;
-    gap: 15px;
-}
-.menu a {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    padding: 10px 0;
-}
-.menu.show {
-    display: flex;
-}
-
 @media only screen and (min-width: 375px) and (max-width: 743px) {
     .logo_img {
         width: 40px;
@@ -155,7 +132,7 @@ a {
         width: 375px;
     }
     
-    .nav_pages, .nav_profile {
+    .nav_pages {
         display: none;
     }
 
@@ -163,14 +140,21 @@ a {
         display: none;
     }
 
-    .menu-icon {
-        display: block;
-    }
-
     body {
         padding-top: 70px;
     }
+
+    .p_icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .notification {
+        width: 20px;
+        height: 20px;
+    }
 }
+
 
 /*MAIN*/
 
@@ -683,4 +667,50 @@ footer::before {
     footer::before {
         top: 380px;
     }
+}
+
+
+.profile_modal {
+    display: none; 
+    position: fixed;
+    top: 50px; 
+    right: 20px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.profile_modal {
+    margin: 65px 50px 0 0;
+}
+
+.modal_menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.modal_menu li {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.modal_menu li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+.modal_menu li a:hover {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+.modal_menu li a.logout {
+    color: red;
+    font-weight: bold;
 }

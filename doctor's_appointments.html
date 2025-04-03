@@ -42,6 +42,16 @@
             <img class="p_icon" src="./images/profile_photo.png" alt="">
         </div>
 
+        <div class="profile_modal" id="profile_modal">
+            <ul class="modal_menu">
+                <li><a href="#">Profile</a></li>
+                <li><a href="#">Patients</a></li>
+                <li><a href="#">Appointments</a></li>
+                <li><a href="#">Change password</a></li>
+                <li><a href="#" class="logout">Log out</a></li>
+            </ul>
+        </div>
+
     </nav>
 
     <main>
@@ -54,7 +64,7 @@
                 Add Appointment
             </button>
         </div>
-        
+
         <ul class="patients_table">
 
             <li class="table_head">
@@ -95,8 +105,8 @@
 
             <li class="contact_us">
 
-                <a href="#home_page" class="logo">
-                    <img src="./images/logo.png" alt="" class="logo_img">
+                <a href="#home_page" class="logo" id="foot_logo">
+                    <img src="./images/logo.png" alt="" class="logo_img" id="foot_logo">
                 </a>
 
                 <ul class="contact_list">
@@ -117,32 +127,34 @@
 
             </li>
 
-            <li class="foot_data pages">
+            <div class="foot_menu">
+                <li class="foot_data pages">
 
-                <a id="footdata_head" href="#">Pages</a>
-                <a href="#">Home</a>
-                <a href="#">Doctors</a>
-                <a href="#">Hospitals</a>
-                <a href="#">Account</a>
+                    <a id="footdata_head" href="#">Pages</a>
+                    <a href="#">Home</a>
+                    <a href="#">Doctors</a>
+                    <a href="#">Hospitals</a>
+                    <a href="#">Account</a>
 
-            </li>
+                </li>
 
-            <li class="foot_data company">
+                <li class="foot_data company">
 
-                <a id="footdata_head" href="#">Company</a>
-                <a href="#">About Us</a>
-                <a href="#">Our families</a>
-                <a href="#">Subscriptions</a>
-                <a href="#">Contact Us</a>
+                    <a id="footdata_head" href="#">Company</a>
+                    <a href="#">About Us</a>
+                    <a href="#">Our families</a>
+                    <a href="#">Subscriptions</a>
+                    <a href="#">Contact Us</a>
 
-            </li>
+                </li>
 
-            <li class="foot_data faq">
+                <li class="foot_data faq">
 
-                <a href="#">FAQ</a>
-                <a href="#">Privacy Policy</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Privacy Policy</a>
 
-            </li>
+                </li>
+            </div>
 
         </ul>
 
@@ -152,6 +164,28 @@
         </div>
 
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const profileIcon = document.querySelector(".p_icon");
+            const profileModal = document.querySelector("#profile_modal");
+
+            profileIcon.addEventListener("click", () => {
+                if (profileModal.style.display === "none" || !profileModal.style.display) {
+                    profileModal.style.display = "block";
+                } else {
+                    profileModal.style.display = "none"; 
+                }
+            });
+
+            document.addEventListener("click", (event) => {
+                if (!profileModal.contains(event.target) && event.target !== profileIcon) {
+                    profileModal.style.display = "none"; 
+                }
+            });
+        });
+
+    </script>
 
 </body>
 
