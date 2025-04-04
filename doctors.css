@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: "Inter", serif;
+    font-family: "Lato", sans-serif;
 }
 
 body {
@@ -15,11 +15,11 @@ body {
 /*NAVBAR*/
 
 nav {
-    padding: 5px 80px;
+    padding: 24px 80px;
 
     display: flex;
     justify-content: space-between;
-    font-size: 24px;
+    font-size: 20px;
 
     border-bottom: 1px solid #e8e8e8;
 
@@ -43,8 +43,8 @@ a {
 }
 
 .logo_img {
-    width: 96px;
-    height: 130px;
+    width: 60px;
+    height: 80px;
 
     @media only screen and (min-width: 744px) and (max-width: 1100px){
         width: 62px;
@@ -53,11 +53,12 @@ a {
 }
 
 .nav_pages {
-    margin: 0;
+    margin: 0 0 0 20px;
     padding: 0;
     
     display: flex;
     align-items: center;
+    
 
     list-style-type: none;
 }
@@ -77,7 +78,7 @@ a {
 }
 
 .nav_pages li {
-    margin-right: 46.3px;
+    margin-right: 35px;
 
     @media only screen and (min-width: 744px) and (max-width: 1100px){
         margin-right: 24px;
@@ -91,6 +92,7 @@ a {
 
 .registr_btns a {
     padding: 13.5px 24px;
+    font-size: 16px;
 }
 
 #login_btn {
@@ -713,6 +715,11 @@ footer::before {
 #desg_name {
     color: #333333;
     margin: 0;
+}
+
+#foot_logo {
+    width: 96px;
+    height: 130px;
 }
 
 @media only screen and (min-width: 375px) and (max-width: 743px) {

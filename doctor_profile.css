@@ -6,7 +6,6 @@
 body {
     margin: 0;
     padding-top: 150px;
-    overflow: hidden;
 
     @media only screen and (min-width: 744px) and (max-width: 1100px) {
         padding-top: 116px;
@@ -16,11 +15,11 @@ body {
 /*NAVBAR*/
 
 nav {
-    padding: 5px 80px;
+    padding: 24px 80px;
 
     display: flex;
     justify-content: space-between;
-    font-size: 24px;
+    font-size: 20px;
 
     border-bottom: 1px solid #e8e8e8;
 
@@ -31,12 +30,11 @@ nav {
     z-index: 1000;
     background-color: #ffffff;
 
-    @media only screen and (min-width: 744px) and (max-width: 1100px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px){
         padding: 16px;
 
+        font-size: 16px;
         width: 744px;
-
-        font-size: 18px;
     }
 }
 
@@ -45,24 +43,26 @@ a {
 }
 
 .logo_img {
-    width: 96px;
-    height: 130px;
+    width: 60px;
+    height: 80px;
 
-    @media only screen and (min-width: 744px) and (max-width: 1100px) {
+    @media only screen and (min-width: 744px) and (max-width: 1100px){
         width: 62px;
         height: 80px;
     }
 }
 
 .nav_pages {
-    margin: 0;
+    margin: 0 0 0 20px;
     padding: 0;
     
     display: flex;
     align-items: center;
+    
 
     list-style-type: none;
 }
+
 
 .nav_pages a {
     color: #000000;
@@ -122,6 +122,10 @@ a {
 }
 
 @media only screen and (min-width: 375px) and (max-width: 743px) {
+    body {
+        overflow-x: hidden;
+    }
+    
     .logo_img {
         width: 40px;
         height: 51px;
@@ -153,6 +157,11 @@ a {
         width: 20px;
         height: 20px;
     }
+}
+
+#foot_logo {
+    width: 96px;
+    height: 130px;
 }
 
 
